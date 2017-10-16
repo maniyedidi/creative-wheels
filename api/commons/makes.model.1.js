@@ -10,13 +10,18 @@ const MakesSchema = new Schema({
         type: String,
         required: true
     },
-    makesList: [{
-        brandName: {type: String},
-        srcUrls: [{
-            url: {type: String},
-            mediaType: {type: String}
-        }]
-    }]
+    maskingName: {
+        type: String,
+        required: true
+    },
+    hostUrl: {
+        type: String,
+        required: true
+    },
+    logoUrl: {
+        type: String,
+        required: true
+    },
 })
 
 module.exports = {
